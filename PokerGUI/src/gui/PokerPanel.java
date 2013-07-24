@@ -374,8 +374,13 @@ public class PokerPanel extends JPanel{
 		
 			for(Player p : players){
 				if(p.getHand() != null){
-					for(int i = 0; i < p.getHand().numCards(); i++){
+					Thread.sleep(100);
+					for(int i = 0; i < 1; i++){
+					
+							
+						Thread.sleep(100);
 						p.getHand().getCard(i).setX(gamePanel.getWidth()/2);
+						Thread.sleep(100);
 						p.getHand().getCard(i).setY(-100);
 						
 						/*
